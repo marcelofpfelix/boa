@@ -1,4 +1,4 @@
-module github.com/marcelofpfelix/nika
+module github.com/marcelofpfelix/boa
 
 go 1.20
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/marcelofpfelix/nika/core"
+	"github.com/marcelofpfelix/boa/core"
 )
 
 func main() {

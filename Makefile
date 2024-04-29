@@ -8,7 +8,7 @@ build:
 	go build -o bin/${BINARY_NAME} main.go
 
 test: build
-	bash tmp/boash
+	bash docs/boash
 #	go test -v main.go
 
 run:
