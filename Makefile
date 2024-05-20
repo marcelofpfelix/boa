@@ -8,12 +8,15 @@ build:
 	go build -o bin/${BINARY_NAME} main.go
 
 test: build
-	bash docs/boash
+	bash docs/example.sh
 #	go test -v main.go
 
 run:
 	go build -o bin/${BINARY_NAME} main.go
 	./bin/${BINARY_NAME}
+
+dist:
+	goreleaser release --snapshot --clean
 
 clean:
 	go clean
