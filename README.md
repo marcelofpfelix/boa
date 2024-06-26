@@ -44,7 +44,7 @@ The `boa` binary will parse the cli arguments and return a string with the value
 With **go** installed, run the following command:
 
 ```sh
-go install github.com/marcelofpfelix/boa
+go install github.com/marcelofpfelix/boa@latest
 ```
 
 It's a statically linked Go binary, so you can also **download** it directly:
@@ -54,5 +54,3 @@ curl -sL https://github.com/marcelofpfelix/boa/releases/latest/download/boa_Linu
 
 sudo mv boa /usr/local/bin
 ```
-
-https://github.com/marcelofpfelix/boa/releases/download/v0.0.1/boa_Linux_x86_64.tar.gz

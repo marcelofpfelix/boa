@@ -18,19 +18,17 @@ type flag struct {
 
 // this could be a tree of commands with `Commands []*command`
 type command struct {
-	Use   string `yaml:"use"`
-	Alias string `yaml:"alias"`
-	Short string `yaml:"short"`
-	Long  string `yaml:"long"`
-	Flags []flag `yaml:"flags"`
-}
-
-type Config struct {
 	Use      string    `yaml:"use"`
 	Short    string    `yaml:"short"`
 	Long     string    `yaml:"long"`
+	Aliases  []string  `yaml:"aliases"`
 	Flags    []flag    `yaml:"flags"`
 	Commands []command `yaml:"commands"`
+}
+
+type Config struct {
+	command `yaml:",inline"`
+	// extra config will go here
 }
 
 func ReadConfig() Config {
