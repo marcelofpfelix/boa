@@ -12,3 +12,25 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: ⬆
+
+  # Go modules
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: ⬆
+    groups:
+      # Group all patch and minor updates together
+      non-breaking:
+        update-types:
+          - "minor"
+          - "patch"
+
+      # Group CLI framework dependencies
+      cli-framework:
+        patterns:
+          - "github.com/spf13/cobra"
+          - "github.com/spf13/pflag"
