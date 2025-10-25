@@ -10,5 +10,3 @@
 * Add color and logo to the cli.
   * https://github.com/ivanpirog/coloredcobra/blob/main/coloredcobra.go
   * https://github.com/spf13/cobra/issues/692
-
-
