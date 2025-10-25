@@ -23,7 +23,7 @@ flags:
 commands:
   - use: list
     short: example command 1
-    aliases: 
+    aliases:
       - l
     long: |
       This is an example command
@@ -65,4 +65,3 @@ else
     # print the result
     echo "Running:" "${cmd} -c ${carbon}" "-n ${nitrogen}" "-o ${oxygen}"
 fi
-
